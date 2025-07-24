@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Age Calculator <span>by Ansari</span></h1>
+    </header>
+
+    <div class="container">
+        <form id="ageForm">
+            <label for="dob">Enter your Date of Birth:</label>
+            <input type="date" id="dob" required>
+            <div class="buttons">
+                <button type="button" onclick="calculateAge()">Calculate Age</button>
+                <button type="button" onclick="clearForm()">Clear</button>
+                <button type="button" onclick="setBirthdayAlarm()">Set Birthday Alarm</button>
+            </div>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <footer>
+        <p>© 2025 Rizwana Ansari. All rights reserved.</p>
+    </footer>
+
+    <!-- Birthday sound -->
+    <audio id="birthdaySound" src="https://www.soundjay.com/buttons/sounds/button-16.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
